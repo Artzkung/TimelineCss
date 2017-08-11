@@ -1,115 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/main-css.css" rel="stylesheet">
-  </head>
-  <body>
-    <h2>CSS3 Horizontal Timeline</h2>
-    <p id="note">Since the flex property only works in Chrome, if your are using other browers please set the $chrome variable to false. <br/> It seems there is a CSS3 transform bug in Safari.</p>
-    <ul id='timeline'>
-      <li class='entry'>
-        <input checked='checked' class='radio' id='trigger5' name='trigger' type='radio'>
-        <label for='trigger5'>
-          <span>
-            Lorem ipsum dolor sit amet
-          </span>
-        </label>
-        <span class='date'>16 May 2013</span>
-        <span class='circle'></span>
-        <div class='content'>
-          <h3>Lorem ipsum dolor sit amet (16 May 2013)</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati laborum non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui non ipsam ullam tempore reprehenderit illum temporibus! qui est optio rerum.
-          </p>
-        </div>
-      </li>
-      <li class='entry'>
-        <input class='radio' id='trigger4' name='trigger' type='radio'>
-        <label for='trigger4'>
-          <span>
-            Lorem ipsum dolor sit amet
-          </span>
-        </label>
-        <span class='date'>15 May 2013</span>
-        <span class='circle'></span>
-        <div class='content'>
-          <h3>Lorem ipsum dolor sit amet (15 May 2013)</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem voluptate excepturi rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
-          </p>
-        </div>
-      </li>
-      <li class='entry'>
-        <input class='radio' id='trigger3' name='trigger' type='radio'>
-        <label for='trigger3'>
-          <span>
-            Lorem ipsum dolor sit amet
-          </span>
-        </label>
-        <span class='date'>14 May 2013</span>
-        <span class='circle'></span>
-        <div class='content'>
-          <h3>Lorem ipsum dolor sit amet (14 May 2013)</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt!
-          </p>
-        </div>
-      </li>
-      <li class='entry'>
-        <input class='radio' id='trigger2' name='trigger' type='radio'>
-        <label for='trigger2'>
-          <span>
-            Lorem ipsum dolor sit amet
-          </span>
-        </label>
-        <span class='date'>13 May 2013</span>
-        <span class='circle'></span>
-        <div class='content'>
-          <h3>Lorem ipsum dolor sit amet (13 May 2013)</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
-          </p>
-        </div>
-      </li>
-      <li class='entry'>
-        <input class='radio' id='trigger1' name='trigger' type='radio'>
-        <label for='trigger1'>
-          <span>
-            Lorem ipsum dolor sit amet
-          </span>
-        </label>
-        <span class='date'>12 May 2013</span>
-        <span class='circle'></span>
-        <div class='content'>
-          <h3>Lorem ipsum dolor sit amet (12 May 2013)</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt!
-          </p>
-        </div>
-      </li>
-    </ul>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.5.0/css/lightgallery.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <link href="css/main-css.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="wrapper" class="toggled">
+    <div id="sidebar-wrapper">
+      <ul class="nav sidebar-nav">
+        <li class="sidebar-brand">
+          <a href="index.html"></a>
+        </li>
+        <li class="active">
+          <a href="#profile" class="page-scroll"><span class="menu">PROFILE</span> <i class="fa fa-user-circle" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a href="#resume" class="page-scroll"><span class="menu">RESUME</span> <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a href="#portfolio" class="page-scroll"><span class="menu">PORTFOLIO</span> <i class="fa fa-folder-open-o" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a href="#contact" class="page-scroll"><span class="menu">CONTACT</span> <i class="fa fa-phone" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div id="page-content-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a> -->
+            <div id="profile">
+              <div class="profile">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div id="resume">
+              <div class="resume">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="box-resume">
+                      <i class="fa fa-user-o" aria-hidden="true"></i>
+                      <h1>About Me</h1>
+                      <p>
+
+                      </p>
+                    </div>
+                    <div class="box-resume">
+                      <i class="fa fa-pie-chart" aria-hidden="true"></i>
+                      <h1>Skills</h1>
+                      <div class="skillbar clearfix " data-percent="100%">
+                      	<div class="skillbar-title" style="background: #c0392b;"><span>HTML 5</span></div>
+                      	<div class="skillbar-bar" style="background: #e74c3c;"></div>
+                      	<div class="skill-bar-percent">100%</div>
+                      </div> <!-- End Skill Bar -->
+                      <div class="skillbar clearfix " data-percent="90%">
+                      	<div class="skillbar-title" style="background: #27ae60;"><span>CSS</span></div>
+                      	<div class="skillbar-bar" style="background: #2ecc71;"></div>
+                      	<div class="skill-bar-percent">90%</div>
+                      </div> <!-- End Skill Bar -->
+                      <div class="skillbar clearfix " data-percent="70%">
+                      	<div class="skillbar-title" style="background: #2980b9;"><span>JS</span></div>
+                      	<div class="skillbar-bar" style="background: #3498db;"></div>
+                      	<div class="skill-bar-percent">70%</div>
+                      </div> <!-- End Skill Bar -->
+                      <div class="skillbar clearfix " data-percent="80%">
+                      	<div class="skillbar-title" style="background: #f39c12;"><span>Photoshop</span></div>
+                      	<div class="skillbar-bar" style="background: #f1c40f;"></div>
+                      	<div class="skill-bar-percent">80%</div>
+                      </div> <!-- End Skill Bar -->
+                      <div class="skillbar clearfix " data-percent="70%">
+                      	<div class="skillbar-title" style="background: #2c3e50;"><span>SQL</span></div>
+                      	<div class="skillbar-bar" style="background: #34495e;"></div>
+                      	<div class="skill-bar-percent">70%</div>
+                      </div> <!-- End Skill Bar -->
+                      <div class="skillbar clearfix " data-percent="70%">
+                      	<div class="skillbar-title" style="background: #8e44ad;"><span>.NET(C#)</span></div>
+                      	<div class="skillbar-bar" style="background: #9b59b6;"></div>
+                      	<div class="skill-bar-percent">70%</div>
+                      </div> <!-- End Skill Bar -->
+                    </div>
+                    <div class="box-resume">
+                      <i class="fa fa-language" aria-hidden="true"></i>
+                      <h1>Language</h1>
+                      <ul class="language">
+                        <p>Thai</p>
+                        <p>English</p>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="box-resume">
+                      <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                      <h1>Education & Jobs</h1>
+                      <div class="timeline">
+                        <div class="entry">
+                          <div class="title">
+                            <h3>2014 - Graduation</h3>
+                          </div>
+                          <div class="body">
+                            <p>Dhurakij Pundit University</p>
+                            <ul>
+                              <li>I graduated from Dhurakij Pundit university.</li>
+                              <li>Bachelor degree of Business Information Technology.</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="entry">
+                          <div class="title">
+                            <h3>2014 - 2015</h3>
+                          </div>
+                          <div class="body">
+                            <p>July 2014 – February 2015 (8 months) Work at PHASORGANIZE CO., LTD.</p>
+                            <ul>
+                              <li>Position : Supervisor</li>
+                              <li>coordinate between company and employer.</li>
+                              <li>Lead the team out as it has been for assignment.</li>
+                              <li>Manage all computer in company.</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="entry">
+                          <div class="title">
+                            <h3>2015 – Today</h3>
+                          </div>
+                          <div class="body">
+                            <p>July 2015 – Today (2 years)  Work at POWER STATION MOTORSPORT CO., LTD.</p>
+                            <ul>
+                              <li>Position : IT Admin Support</li>
+                              <li>Create and design web application for users.</li>
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="box-resume">
+                      <i class="fa fa-laptop" aria-hidden="true"></i>
+                      <h1>My Specialities</h1>
+                      <div class="specialities">
+                        <i class="fa fa-code" aria-hidden="true"></i>
+                        <p class="specialities-text">Front-End Web Development</p>
+                      </div>
+                      <div class="specialities">
+                        <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                        <p class="specialities-text">Web Design & Application</p>
+                      </div>
+                      <div class="specialities">
+                        <i class="fa fa-desktop" aria-hidden="true"></i> <i class="fa fa-tablet" aria-hidden="true"></i> <i class="fa fa-mobile" aria-hidden="true"></i>
+                        <p class="specialities-text">Responsive Design</p>
+                      </div>
+                    </div>
+                    <div class="box-resume">
+                      <i class="fa fa-futbol-o" aria-hidden="true"></i>
+                      <h1>Hobbies & Interests</h1>
+                      <ul class="hobbies">
+                        <li>Technology</li>
+                        <li>Games Computer</li>
+                        <li>Go (Weiqi)</li>
+                        <li>Football</li>
+                        <li>Traveling</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div id="portfolio">
+              <div class="portfolio">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="box-portfolio">
+                      <div id="responsive-images" data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1-757.jpg 757">
+                        <a href="img/AirwaveCloud/index.png" id="overlay">
+                            <img src="img/AirwaveCloud-500px/index.png" class="img-responsive airwave"/>
+                            <span>AIRWAVE CLOUD</span>
+                            <p>http://airwave.cloud/</p>
+                        </a>
+                        <a href="img/AirwaveCloud/pricing.png">
+
+                        </a>
+                        <a href="img/AirwaveCloud/dedicate-server.png" >
+
+                        </a>
+                        <a href="img/AirwaveCloud/features.png">
+
+                        </a>
+                        <a href="img/AirwaveCloud/contact.png">
+
+                        </a>
+                      </div>
+                    </div>
+                    <!-- <div class="box-portfolio">
+                      <div id="responsive-images4" data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1-757.jpg 757">
+                        <a href="img/HD-Artworks/SporterSpec.png">
+                            <img src="img/HD_Artworks_500px/SporterSpec.png" class="img-responsive"/>
+                        </a>
+                        <a href="img/HD-Artworks/promotion_HD-48.png">
+
+                        </a>
+                        <a href="img/HD-Artworks/GM.png">
+
+                        </a>
+                        <a href="img/HD-Artworks/GmMidyear50.png">
+
+                        </a>
+                        <a href="img/HD-Artworks/MC.png">
+
+                        </a>
+                        <a href="img/HD-Artworks/PNA.png">
+
+                        </a>
+                        <a href="img/HD-Artworks/CUSTOM.png">
+
+                        </a>
+                      </div>
+                    </div> -->
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="box-portfolio">
+                      <div id="responsive-images5" data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1-757.jpg 757">
+                        <a href="img/MockUp-FlowerShop/MockUp-FlowerShop.png">
+                            <img src="img/MockUp-FlowerShop_500px/MockUp-FlowerShop.png" class="img-responsive"/>
+                            <span>MockUp-FlowerShop</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="box-portfolio">
+                      <div id="responsive-images2" data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1-757.jpg 757">
+                        <a href="img/PosCSharp/SaleMC.png">
+                            <img src="img/PosCSharp_500px/SaleMC.png" class="img-responsive"/>
+                            <span>HD-AdminPage</span>
+                        </a>
+                        <a href="img/PosCSharp/SaleGM.png">
+
+                        </a>
+                        <a href="img/PosCSharp/POSBillsHistory.png">
+
+                        </a>
+                        <a href="img/PosCSharp/SalePNAPOS.png">
+
+                        </a>
+                        <a href="img/PosCSharp/SalePNATax.png">
+
+                        </a>
+                        <a href="img/PosCSharp/modal.png">
+
+                        </a>
+                      </div>
+                    </div>
+                    <div class="box-portfolio">
+                      <div id="responsive-images3" data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1-757.jpg 757">
+                        <a href="img/TimeAttendanceCSharp/Daily.png">
+                            <img src="img/TimeAttendanceCSharp_500px/Daily.png" class="img-responsive"/>
+                            <span>HD-TimeAttendance</span>
+                        </a>
+                        <a href="img/TimeAttendanceCSharp/TaList.png">
+
+                        </a>
+                        <a href="img/TimeAttendanceCSharp/TaByUser.png">
+
+                        </a>
+                        <a href="img/TimeAttendanceCSharp/LeaveRecord.png">
+
+                        </a>
+                        <a href="img/TimeAttendanceCSharp/LeaveRecordList.png">
+
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="contact">
+          <div class="contact">
+            <div class="row">
+              <div class="col-lg-6 col-xs-12">
+                <div class="contact-list">
+                  <ul>
+                    <li>
+                      <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                      E-mail : nattapongartkan@gmail.com
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6 col-xs-12">
+                <div class="contact-list">
+                  <ul>
+                    <li>
+                      <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                      Tel. : 095-754-9650
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.5.0/js/lightgallery-all.min.js"></script>
+  <script src="js/agency.js"></script>
+  <script>
+    $('.sidebar-nav li').on('click', function() {
+      $('.sidebar-nav li').removeClass('active');
+      $(this).addClass('active');
+    });
+  </script>
+  <script>
+    $('#responsive-images').lightGallery();
+    $('#responsive-images2').lightGallery();
+    $('#responsive-images3').lightGallery();
+    $('#responsive-images4').lightGallery();
+    $('#responsive-images5').lightGallery();
+    jQuery(document).ready(function(){
+	  jQuery('.skillbar').each(function(){
+		jQuery(this).find('.skillbar-bar').animate({
+    			width:jQuery(this).attr('data-percent')
+    		},3000);
+    	});
+    });
+  </script>
+</body>
+
 </html>
